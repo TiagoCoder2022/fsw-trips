@@ -37,8 +37,8 @@ const MyTrips = () => {
   }, [status]);
 
   return (
-    <div className="container mx-auto p-5">
-      <h1 className="font-semibold text-primaryDarker text-xl lg:mb-5">Minhas Viagens</h1>
+    <div className="container mx-auto p-5 mt-4">
+      <h1 className="text-primaryDarker font-semibold text-xl lg:w-full lg:text-left lg:text-[2.5rem]">Minhas Viagens</h1>
       {reservations.length > 0 ? (
         <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-14">
           {reservations?.map((reservation) => (
@@ -47,10 +47,10 @@ const MyTrips = () => {
         </div>
       ) : (
         <div className="flex flex-col lg:max-w-[500px]">
-          <p className="mt-2 font-medium text-primaryDarker">Você ainda não tem nenhuma reserva! ☹</p>
+          <p className="mt-5 font-medium text-primaryDarker">Você ainda não tem nenhuma reserva! ☹</p>
 
           <Link href="/">
-            <Button className="w-full mt-2 lg:mt-5">Fazer reserva</Button>
+            <Button className="w-full mt-8">Fazer reserva</Button>
           </Link>
         </div>
       )}
