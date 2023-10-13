@@ -11,7 +11,7 @@ const QuickSearch = () => {
         <div className="w-full h-[1px] bg-grayLighter"></div>
       </div>
 
-      <div className="flex w-full justify-between mt-5 lg:mt-10 lg:justify-center gap-40">
+      <div className="flex w-full justify-between mt-5 lg:mt-10 lg:justify-center lg:gap-40">
         <div className="flex flex-col items-center gap-1">
           <Link href={`/trips/search?text=hotel`} className="flex flex-col items-center hover:text-primary transition-all">
             <Image width={35} height={35} src="/hotel-icon.png" alt="Hotel" />
